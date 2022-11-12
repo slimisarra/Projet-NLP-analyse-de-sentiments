@@ -14,6 +14,7 @@ from PIL import Image
 
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
 
 DATASET_FILE = "./dataset_cleaned.csv"
 dataset_df = pd.read_csv(DATASET_FILE)
