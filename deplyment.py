@@ -13,7 +13,7 @@ import pandas as pd
 from PIL import Image
 
 
-DATASET_FILE = r"E:\PycharmProjects\stream\dataset_cleaned.csv"
+DATASET_FILE = "./dataset_cleaned.csv"
 dataset_df = pd.read_csv(DATASET_FILE)
 Negative_data = dataset_df[(dataset_df['stars'] == 1) | (dataset_df['stars'] == 2)]
 data = Negative_data.text_cleaned
