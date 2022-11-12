@@ -12,6 +12,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
+nltk.download('punkt')
 
 DATASET_FILE = "./dataset_cleaned.csv"
 dataset_df = pd.read_csv(DATASET_FILE)
