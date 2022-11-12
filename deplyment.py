@@ -151,7 +151,7 @@ def main():
     st.sidebar.header("Review analyser")
     type = st.sidebar.radio("Vous aimez écrire votre avis ou générer un avis aléatoire de dataset ?", ('Dataset', 'Avis'))
 
-    image = Image.open(r'E:\PycharmProjects\stream\frai-03-00042-g002.jpg')
+    image = Image.open('./frai-03-00042-g002.jpg')
     st.image(image, caption='Topic Modeling')
 
     if type == "Dataset":
