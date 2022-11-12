@@ -17,7 +17,7 @@ DATASET_FILE = "./dataset_cleaned.csv"
 dataset_df = pd.read_csv(DATASET_FILE)
 Negative_data = dataset_df[(dataset_df['stars'] == 1) | (dataset_df['stars'] == 2)]
 data = Negative_data.text_cleaned
-with (open(r'E:\PycharmProjects\stream\Vectorizer.pkl', "rb")) as f:
+with (open('./Vectorizer.pkl', "rb")) as f:
     while True:
         try:
            Vect= pickle.load(f)
@@ -25,7 +25,7 @@ with (open(r'E:\PycharmProjects\stream\Vectorizer.pkl', "rb")) as f:
             break
 
 
-with (open(r'E:\PycharmProjects\stream\modelNmf.pkl', "rb")) as f:
+with (open('./modelNmf.pkl', "rb")) as f:
     while True:
         try:
             Model=pickle.load(f)
